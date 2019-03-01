@@ -19805,7 +19805,7 @@ body {
 ----------------------------------------------------------------*/
 
 .header-preview {
-  background-image: url(http://placehold.it/1920x1280);
+  background-image: url("/images/bgs/hero.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   top: 0;
@@ -20318,28 +20318,10 @@ body {
   height: 100vh;
 }
 
-/* 01 Default Home  */
-
-.home-default {
-  background-image: url(http://placehold.it/1920x1280);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  top: 0;
-  left: 0;
-  background-size: cover;
-  height: 100vh;
-  min-height: 100%;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  z-index: 222;
-}
-
 /* 02 Typed Home  */
 
 .home-typed {
-  background-image: url(http://placehold.it/1920x1280);
+  background-image: url("/images/bgs/hero.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -20356,92 +20338,6 @@ body {
 
 .typed {
   color: #FFF !important;
-}
-
-/* 03 home prticles  */
-
-.home-prticles {
-  background-image: url(http://placehold.it/1920x1280);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  top: 0;
-  left: 0;
-  background-size: cover;
-  height: 100vh;
-  min-height: 100%;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  z-index: 222;
-}
-
-#particles-js-two {
-  width: 100%;
-  height: 99%;
-  position: absolute;
-  z-index: 4;
-}
-
-/* 04 home prticles & Tyoed  */
-
-.home-particles-typed {
-  background-image: url(http://placehold.it/1920x1280);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  top: 0;
-  left: 0;
-  background-size: cover;
-  height: 100vh;
-  min-height: 100%;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  z-index: 222;
-}
-
-/* 05 home Snow */
-
-.home-snow {
-  background-image: url(http://placehold.it/1920x1280);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  top: 0;
-  left: 0;
-  background-size: cover;
-  height: 100vh;
-  min-height: 100%;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  z-index: 222;
-}
-
-#particles-js-one {
-  width: 100%;
-  height: 99%;
-  position: absolute;
-  z-index: 4;
-}
-
-/* 06 home Snow & typed */
-
-.home-snow-typed {
-  background-image: url(http://placehold.it/1920x1280);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  top: 0;
-  left: 0;
-  background-size: cover;
-  height: 100vh;
-  min-height: 100%;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  z-index: 222;
 }
 
 .info-header {
@@ -20738,7 +20634,7 @@ body {
   margin-bottom: 30px;
   padding: 50px 30px;
   position: relative;
-  background-image: url(http://placehold.it/1920x1280);
+  background-image: url("/images/bgs/stats.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;

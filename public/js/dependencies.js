@@ -3344,7 +3344,7 @@ $(document).ready(function () {
     /*========== Start Header Typed Js ==========    */
     if ($("#type")[0]) {
         var element = new Typed('#type', {
-            strings: ["Digital Product Designer", "Graphic Designer", "Web Developer"],
+            strings: ["Web-Entwickler", "Gelernter Kaufmann", "IT-Freak", "Blau ist meine Farbe"],
             typeSpeed: 100,
             backSpeed: 20,
             loop: true

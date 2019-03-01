@@ -11,6 +11,11 @@
 |
 */
 
+use Carbon\Carbon;
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome', [
+        'social' => config('project.social'),
+        'age' => Carbon::createFromDate(1997, 4, 11)->diff(Carbon::now())->format('%y'),
+    ]);
 });
