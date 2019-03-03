@@ -17,5 +17,8 @@ Route::get('/', function () {
     return view('welcome', [
         'social' => config('project.social'),
         'age' => Carbon::createFromDate(1997, 4, 11)->diff(Carbon::now())->format('%y'),
+        'experience' => config('project.resume.experience'),
+        'edu' => config('project.resume.education'),
+        'portfolio' => config('project.portfolio')
     ]);
 });

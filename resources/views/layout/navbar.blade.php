@@ -19,9 +19,6 @@
                     <a class="nav-link" href="#about">Über mich</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#service">Service</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">

@@ -345,7 +345,7 @@ p {
 .section-title p {
   margin-top: 35px;
   margin-bottom: 0;
-  text-transform: capitalize;
+  //text-transform: capitalize;
 }
 
 .display-table {
@@ -1524,6 +1524,9 @@ body {
 .resume-head.content-exper .history {
   font-size: 13px;
   color: #444;
+}
+.resume-head .history a {
+  color: $main-color !important;
 }
 .resume-footer {
   position: relative;
