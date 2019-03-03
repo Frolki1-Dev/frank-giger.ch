@@ -184,7 +184,7 @@ $(document).ready(function () {
 
 
     //// PARTICLES TWO TRIGGER
-    if ($("#particles-js-two")[0]) {
+    /*if ($("#particles-js-two")[0]) {
         particlesJS("particles-js-two", {
             "particles": {
                 "number": {
@@ -296,7 +296,7 @@ $(document).ready(function () {
             "retina_detect": true
         });
 
-    }
+    }*/
 
     /*========== Start Header Typed Js ==========    */
     if ($("#type")[0]) {
@@ -368,6 +368,8 @@ $(document).ready(function () {
             margin: 50,
             nav: true,
             autoplay: true,
+            autoplayHoverPause: true,
+            autoplaySpeed: 1000,
             navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
             responsive: {
                 0: {
