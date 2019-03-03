@@ -112,6 +112,41 @@
                             <div class="testmonail-box">
 
                                 <ul class="list-stars">
+                                    <li><i class="fas fa-star fa-2x"></i></li>
+                                    <li><i class="fas fa-star fa-2x"></i></li>
+                                    <li><i class="fas fa-star fa-2x"></i></li>
+                                    <li><i class="fas fa-star fa-2x"></i></li>
+                                    <li><i class="fas fa-star fa-2x"></i></li>
+                                </ul>
+
+                                <div class="inner-test">
+                                    <p class="text">Egal mit welchem Problem ich mich herumschlage, Frank hat immer einen guten Input für mich.<br>Auch wenn er manchmal etwas crazy ist, so könnte ich mir keinen Tag ohne ihn vorstellen!</p>
+
+                                </div>
+
+                                <div class="clearfix"></div>
+                                <!-- Testmonail Image -->
+                                <div class="client-img">
+                                    <img src="/images/rainbow.png" alt="Client">
+                                </div>
+                                <div class="author-details">
+                                    <h6> Jenny Widmer </h6>
+                                    <span>Applikationssupporterin</span>
+                                </div>
+
+                                <div class="quote-icon">
+                                    <i class="fal fa-quote-left fa-2x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testmonail-item">
+                        <div class="owl-item">
+                            <div class="testmonail-box">
+
+                                <ul class="list-stars">
                                     <li><i class="fal fa-star fa-2x"></i></li>
                                     <li><i class="fal fa-star fa-2x"></i></li>
                                     <li><i class="fal fa-star fa-2x"></i></li>
