@@ -3382,7 +3382,7 @@ $(document).ready(function () {
     }*/
 
     /*========== Start Magnigic Popup Js ==========*/
-    if ($('.my-work')[0]) {
+    /*if ($('.my-work')[0]) {
 
         $('.my-work').magnificPopup({
             delegate: 'a',
@@ -3391,7 +3391,7 @@ $(document).ready(function () {
                 enabled: true
             }
         });
-    }
+    }*/
 
     /*if ($('.box-img')[0]) {
         $(".box-img").hover3d({

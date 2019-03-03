@@ -24,8 +24,8 @@
             <div class="single-contact">
                 <span><i class="fal fa-envelope"></i></span>
                 <div class="info-cont">
-                    <p>hello@frank-giger.ch</p>
-                    <p>dev@frank-giger.ch</p>
+                    <p><a href="https://mailhide.io/e/PNQfB" target="_blank">*****@frank-giger.ch</a></p>
+                    <p><a href="https://mailhide.io/e/m7QKO" target="_blank">*****@frank-giger.ch</a></p>
                 </div>
             </div>
         </div>

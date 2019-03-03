@@ -21254,6 +21254,10 @@ body {
   line-height: 25px;
 }
 
+.testimonials .inner-test a {
+  color: #298EF6;
+}
+
 .testimonials .inner-test p {
   margin-bottom: 0;
   font-size: 15px;
