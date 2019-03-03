@@ -367,6 +367,7 @@ $(document).ready(function () {
             items: 2,
             margin: 50,
             nav: true,
+            autoplay: true,
             navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
             responsive: {
                 0: {
