@@ -28,7 +28,7 @@
                     {{--</p>--}}
 
 
-                    <a href="cv.pdf" class="btn-one">Mein Lebenslauf</a>
+                    {{--<a href="cv.pdf" class="btn-one">Mein Lebenslauf</a>--}}
                 </div>
             </div>
 
