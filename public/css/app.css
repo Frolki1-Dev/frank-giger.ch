@@ -20278,6 +20278,10 @@ body {
   color: #f9f9f9;
 }
 
+.info-cont a {
+  color: #298EF6;
+}
+
 .contact-side .single-contact p {
   margin-bottom: 0;
   line-height: 24px;
