@@ -147,6 +147,41 @@
                             <div class="testmonail-box">
 
                                 <ul class="list-stars">
+                                    <li><i class="fas fa-star fa-2x"></i></li>
+                                    <li><i class="fas fa-star fa-2x"></i></li>
+                                    <li><i class="fas fa-star fa-2x"></i></li>
+                                    <li><i class="fas fa-star fa-2x"></i></li>
+                                    <li><i class="fas fa-star fa-2x"></i></li>
+                                </ul>
+
+                                <div class="inner-test">
+                                    <p class="text">Bei Fragen oder Probleme war Frank immer für mich / einem da. Das schätze ich sehr. Er ist sehr erfahren und ich konnte viel von Ihm lernen. Bin sehr dankbar, dass ich Ihn kennengelernt habe.</p>
+
+                                </div>
+
+                                <div class="clearfix"></div>
+                                <!-- Testmonail Image -->
+                                <div class="client-img">
+                                    <img src="/images/female2.png" alt="Client">
+                                </div>
+                                <div class="author-details">
+                                    <h6> Valeria Ladalardo </h6>
+                                    <span>Applikationssupporterin</span>
+                                </div>
+
+                                <div class="quote-icon">
+                                    <i class="fal fa-quote-left fa-2x"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testmonail-item">
+                        <div class="owl-item">
+                            <div class="testmonail-box">
+
+                                <ul class="list-stars">
                                     <li><i class="fal fa-star fa-2x"></i></li>
                                     <li><i class="fal fa-star fa-2x"></i></li>
                                     <li><i class="fal fa-star fa-2x"></i></li>
