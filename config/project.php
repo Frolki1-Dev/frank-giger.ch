@@ -42,16 +42,25 @@ return [
     'resume' => [
         'experience' => [
             [
+                'title' => 'Mitarbeiter Patiententransport (ZTP)',
+                'company' => 'Kantonsspital St. Gallen',
+                'place' => 'St. Gallen',
+                'url' => 'https://www.kssg.ch',
+                'from' => '2019-06-01',
+                'to' => null,
+                'icon' => 'hospital'
+            ],
+            [
                 'title' => 'First & Second-Level Supporter',
                 'company' => 'SORBA EDV AG',
                 'place' => 'St. Gallen',
                 'url' => 'https://sorba.ch',
                 'from' => '2018-07-02',
-                'to' => null,
+                'to' => '2019-05-31',
                 'icon' => 'life-ring'
             ],
             [
-                'title' => 'Zivildienst - Patiententransport',
+                'title' => 'Zivildienst - Patiententransport (ZTP)',
                 'company' => 'Kantonsspital St. Gallen',
                 'place' => 'St. Gallen',
                 'url' => 'https://www.kssg.ch',

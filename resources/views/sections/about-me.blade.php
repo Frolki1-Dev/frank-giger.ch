@@ -21,7 +21,7 @@
                     </div>
 
 
-                    <h4>Ich {{ $age }} alt und komme aus der Schweiz</h4>
+                    <h4>Ich bin {{ $age }} alt und komme aus der Schweiz</h4>
                     {{--<p class="mb-30">--}}
                         {{--Seit ich 12 Jahre alt bin, programmiere ich aus Leidenschaft Webseiten.--}}
                         {{----}}
@@ -76,7 +76,7 @@
                     <div class="stat-item">
                         <div class="overlay"></div>
                         <div class="inner-stat">
-                            <div class="count" data-from="1" data-to="{{ rand(200, 600) }}" data-speed="3000"></div>
+                            <div class="count" data-from="1" data-to="{{ rand(400, 900) }}" data-speed="3000"></div>
                             <p class="text"><i class="fal fa-coffee"></i> Kaffee</p>
                         </div>
                     </div>
