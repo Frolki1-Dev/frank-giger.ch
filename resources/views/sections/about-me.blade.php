@@ -45,7 +45,7 @@
                     <div class="stat-item">
                         <div class="overlay"></div>
                         <div class="inner-stat">
-                            <div class="count" data-from="1" data-to="20" data-speed="3000"></div>
+                            <div class="count" data-from="1" data-to="12" data-speed="3000"></div>
                             <p class="text"><i class="fal fa-folder"></i> Projekte</p>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                     <div class="stat-item">
                         <div class="overlay"></div>
                         <div class="inner-stat">
-                            <div class="count" data-from="1" data-to="15" data-speed="3000"></div>
+                            <div class="count" data-from="1" data-to="10" data-speed="3000"></div>
                             <p class="text"><i class="fal fa-smile"></i> Zufridene Kunden</p>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                     <div class="stat-item">
                         <div class="overlay"></div>
                         <div class="inner-stat">
-                            <div class="count" data-from="1" data-to="{{ rand(100000, 999999) }}" data-speed="3000"></div>
+                            <div class="count" data-from="1" data-to="{{ rand(1000000, 9999999) }}" data-speed="3000"></div>
                             <p class="text"><i class="fal fa-terminal"></i> Codezeile</p>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                     <div class="stat-item">
                         <div class="overlay"></div>
                         <div class="inner-stat">
-                            <div class="count" data-from="1" data-to="{{ rand(400, 900) }}" data-speed="3000"></div>
+                            <div class="count" data-from="1" data-to="{{ rand(400, 1500) }}" data-speed="3000"></div>
                             <p class="text"><i class="fal fa-coffee"></i> Kaffee</p>
                         </div>
                     </div>

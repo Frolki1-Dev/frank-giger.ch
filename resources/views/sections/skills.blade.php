@@ -39,16 +39,16 @@
                         </div>
 
                         <div class="skill-box">
-                            <h4 class="skill-title">PHP 5 & PHP 7.x</h4>
+                            <h4 class="skill-title">MySQL</h4>
                             <div class="progress-line">
-                                <span data-percent="75"><span class="percent-tooltip">80%</span></span>
+                                <span data-percent="75"><span class="percent-tooltip">75%</span></span>
                             </div>
                         </div>
 
                         <div class="skill-box">
-                            <h4 class="skill-title">MySQL</h4>
+                            <h4 class="skill-title">Windows 10 / Windows Server</h4>
                             <div class="progress-line">
-                                <span data-percent="70"><span class="percent-tooltip">70%</span></span>
+                                <span data-percent="60"><span class="percent-tooltip">60%</span></span>
                             </div>
                         </div>
                     </div>
@@ -61,26 +61,18 @@
                     <div class="skills">
 
                         <div class="skill-box">
-                            <h4 class="skill-title">JavaScript / JQuery / Vue.js</h4>
+                            <h4 class="skill-title">PHP 5 & PHP 7.x / Laravel</h4>
                             <div class="progress-line">
-                                <span data-percent="70"><span class="percent-tooltip">70%</span></span>
+                                <span data-percent="85"><span class="percent-tooltip">85%</span></span>
                             </div>
                         </div>
 
                         <div class="skill-box">
-                            <h4 class="skill-title">Windows 10 / Windows Server</h4>
+                            <h4 class="skill-title">JavaScript / JQuery / VueJS</h4>
                             <div class="progress-line">
-                                <span data-percent="60"><span class="percent-tooltip">60%</span></span>
+                                <span data-percent="75"><span class="percent-tooltip">75%</span></span>
                             </div>
                         </div>
-
-                        <div class="skill-box">
-                            <h4 class="skill-title">C/C++</h4>
-                            <div class="progress-line">
-                                <span data-percent="7"><span class="percent-tooltip">7%</span></span>
-                            </div>
-                        </div>
-
 
                     </div>
 

@@ -146,12 +146,6 @@ return [
     ],
     'portfolio' => [
         [
-            'title' => 'My progress in C++',
-            'description' => 'Wie ich C++ lerne',
-            'url' => 'https://github.com/Frolki1-Dev/my-progress-in-CPP',
-            'image' => 'images/Github.jpg'
-        ],
-        [
             'title' => 'Google Embed for PHP',
             'description' => 'Für das einfachen erstellen von Map Embeds in PHP',
             'url' => 'https://github.com/Frolki1-Dev/google-embed-php',
