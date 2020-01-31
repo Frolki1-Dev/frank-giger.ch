@@ -146,6 +146,12 @@ return [
     ],
     'portfolio' => [
         [
+            'title' => 'TopicCRM',
+            'description' => 'Verwalte Kontakte und Dokumente simpel und einfach',
+            'url' => '#',
+            'image' => 'images/TopicCRM.jpg'
+        ],
+        [
             'title' => 'Google Embed for PHP',
             'description' => 'Für das einfachen erstellen von Map Embeds in PHP',
             'url' => 'https://github.com/Frolki1-Dev/google-embed-php',
