@@ -152,6 +152,12 @@ return [
             'image' => 'images/Github.jpg'
         ],
         [
+            'title' => 'Permission Setup für Laravel',
+            'description' => 'Setzt die Rechte für Laravel-Projekte korrekt',
+            'url' => 'https://gist.github.com/Frolki1-Dev/2dc87b3ea1380e294b44846124f81145',
+            'image' => 'images/Github.jpg'
+        ],
+        [
             'title' => 'Schiedsrichter Rheintal',
             'description' => 'Ein Redesign der Webseite und Integration von Drupal',
             'url' => 'https://www.schiedsrichter-rheintal.ch/',
