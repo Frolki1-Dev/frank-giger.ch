@@ -42,12 +42,21 @@ return [
     'resume' => [
         'experience' => [
             [
+                'title' => 'Web-Entwickler',
+                'company' => 'Mirabit GmbH',
+                'url' => 'https://www.mirabit.com',
+                'place' => 'Romanshorn',
+                'from' => '2020-05-01',
+                'to' => null,
+                'icon' => 'brackets-curly'
+            ],
+            [
                 'title' => 'Mitarbeiter Patiententransport (ZTP)',
                 'company' => 'Kantonsspital St. Gallen',
                 'place' => 'St. Gallen',
                 'url' => 'https://www.kssg.ch',
                 'from' => '2019-06-01',
-                'to' => null,
+                'to' => '2020-05-31',
                 'icon' => 'hospital'
             ],
             [
