@@ -46,7 +46,7 @@ return [
                 'company' => 'Mirabit GmbH',
                 'url' => 'https://www.mirabit.com',
                 'place' => 'Romanshorn',
-                'from' => '2020-05-01',
+                'from' => '2020-06-01',
                 'to' => null,
                 'icon' => 'brackets-curly'
             ],
