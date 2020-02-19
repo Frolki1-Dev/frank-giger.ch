@@ -43,7 +43,7 @@ return [
         'experience' => [
             [
                 'title' => 'Web-Entwickler',
-                'company' => 'Mirabit GmbH',
+                'company' => 'Mirabit AG',
                 'url' => 'https://www.mirabit.com',
                 'place' => 'Romanshorn',
                 'from' => '2020-06-01',
