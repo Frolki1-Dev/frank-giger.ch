@@ -33,11 +33,11 @@ return [
             'icon' => 'fa-linkedin',
             'hero' => true
         ],
-        'bitbucket' => [
-            'url' => 'https://bitbucket.org/Frolki1_Dev/',
-            'icon' => 'fa-bitbucket',
-            'hero' => false
-        ]
+//        'bitbucket' => [
+//            'url' => 'https://bitbucket.org/Frolki1_Dev/',
+//            'icon' => 'fa-bitbucket',
+//            'hero' => false
+//        ]
     ],
     'resume' => [
         'experience' => [
