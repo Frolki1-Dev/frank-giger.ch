@@ -155,6 +155,12 @@ return [
     ],
     'portfolio' => [
         [
+            'title' => 'EditHosts',
+            'description' => 'Edit easily the windows hosts file.',
+            'url' => 'https://github.com/Frolki1-Dev/EditHosts/releases',
+            'image' => 'images/EditHosts.jpg'
+        ],
+        [
             'title' => 'TopicCRM',
             'description' => 'Verwalte Kontakte und Dokumente simpel und einfach',
             'url' => '#',
