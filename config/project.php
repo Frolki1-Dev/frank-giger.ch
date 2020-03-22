@@ -107,6 +107,15 @@ return [
         ],
         'education' => [
             [
+                'title' => 'Dipl. Wirtschaftsinformatiker HF',
+                'school' => 'Zentrum für berufliche Weiterbildung',
+                'url' => 'https://www.zbw.ch/hoehere-berufsbildung/hoehere-fachschule-hf/fuer-wirtschaft/%20Dipl.-Wirtschaftsinformatiker-in-HF',
+                'place' => 'St. Gallen',
+                'from' => '2020-10-19',
+                'to' => '2023-10-31',
+                'icon' => 'code-branch'
+            ],
+            [
                 'title' => 'ICT-Professional PC / Network SIZ',
                 'school' => 'Bénédict Schule St. Gallen AG',
                 'url' => 'https://siz.ch/Angebot/Diplomangebot/ICT-Professional-PC-Network-SIZ',
