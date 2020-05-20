@@ -46,7 +46,7 @@ return [
                 'company' => 'Mirabit AG',
                 'url' => 'https://www.mirabit.com',
                 'place' => 'Romanshorn',
-                'from' => '2020-06-01',
+                'from' => '2020-05-25',
                 'to' => null,
                 'icon' => 'brackets-curly'
             ],
@@ -56,7 +56,7 @@ return [
                 'place' => 'St. Gallen',
                 'url' => 'https://www.kssg.ch',
                 'from' => '2019-06-01',
-                'to' => '2020-05-31',
+                'to' => '2020-05-20',
                 'icon' => 'hospital'
             ],
             [
