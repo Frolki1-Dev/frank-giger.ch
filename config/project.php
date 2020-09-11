@@ -42,12 +42,21 @@ return [
     'resume' => [
         'experience' => [
             [
+                'title' => 'Software Engineer Web-Development',
+                'company' => 'MG Group AG',
+                'url' => 'https://www.mfgroup.ch/de',
+                'place' => 'St. Gallen',
+                'from' => '2020-10-01',
+                'to' => null,
+                'icon' => 'brackets-curly'
+            ],
+            [
                 'title' => 'Web-Entwickler',
                 'company' => 'Mirabit AG',
                 'url' => 'https://www.mirabit.com',
                 'place' => 'Romanshorn',
                 'from' => '2020-05-25',
-                'to' => null,
+                'to' => '2020-06-21',
                 'icon' => 'brackets-curly'
             ],
             [
