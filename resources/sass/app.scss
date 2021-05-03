@@ -1,22 +1,259 @@
+@use "normalizer.css";
 
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Raleway:300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
 
-// Variables
-@import 'variables';
+$primary: #298EF6;
+$color-spotify: #1ED760;
+$color-linkedin: #0077B7;
+$color-twitter: #1DA1F2;
+$color-github: #000000;
+$color-mail: #3373EA;
 
-// Dependencies
-@import '~bootstrap/scss/bootstrap';
-@import "~animate.css/animate.min.css";
-@import "~magnific-popup/dist/magnific-popup.css";
-@import "~owl.carousel/dist/assets/owl.carousel.min.css";
-@import "~owl.carousel/dist/assets/owl.theme.default.css";
+$brands: (
+        'spotify': $color-spotify,
+        'linkedin': $color-linkedin,
+        'twitter': $color-twitter,
+        'github': $color-github,
+        'mail': $color-mail
+);
 
-@import "vendor/font-awesome/solid";
-@import "vendor/font-awesome/light";
-@import "vendor/font-awesome/regular";
-@import "vendor/font-awesome/brands";
-@import "vendor/font-awesome/fontawesome";
+$gradient-overlay-start: rgba(0, 0, 0, .96);
+$gradient-overlay-end: rgba($primary, .2);
 
-@import "main";
-@import "responsive";
+$dimension-social-link: 30px;
+$dimension-me: 280px;
+
+@keyframes morph {
+  0% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%
+  }
+  25% {
+    border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%
+  }
+  50% {
+    border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%
+  }
+  75% {
+    border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%
+  }
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("img/hero.webp");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+#overlay {
+  background: linear-gradient(45deg, $gradient-overlay-start, $gradient-overlay-end);
+  width: 100vw;
+  max-width: 100vw;
+  max-height: 100vh;
+  height: 100vh;
+  backdrop-filter: blur(3px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 720px) {
+    padding: 0 3vw;
+    max-width: (100vw - 3vw*2);
+  }
+}
+
+.me {
+  text-align: center;
+
+  img {
+    @media screen and (max-width: 720px) {
+      width: $dimension-me / 1.5;
+      height: $dimension-me / 1.5;
+    }
+
+    width: $dimension-me;
+    height: $dimension-me;
+    border: 5px solid $primary;
+    animation: morph 8s ease-in-out infinite reverse;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
+
+  h1 {
+    @media screen and (max-width: 720px) {
+      font-size: $dimension-me / 8.5;
+    }
+
+    @media screen and (max-width: 520px) {
+      font-size: $dimension-me / 9.5;
+    }
+
+    font-size: $dimension-me / 7;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 0;
+    line-height: .9em;
+
+    small {
+      font-size: .4em;
+      font-weight: 200;
+      font-style: italic;
+    }
+  }
+
+  p.sub {
+    @media screen and (max-width: 720px) {
+      font-size: $dimension-me / 11.5;
+    }
+
+    @media screen and (max-width: 520px) {
+      font-size: $dimension-me / 14;
+    }
+
+    margin: .75em 0 1.25em;
+    color: darken(white, 7%);
+    font-weight: 300;
+    font-size: $dimension-me / 10;
+    line-height: 1.4em;
+  }
+
+  .list {
+    @media screen and (max-height: 650px) {
+      display: none;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    span, a {
+      color: white;
+      margin-right: 1.25rem;
+    }
+
+    span {
+      font-weight: 600;
+
+      @media screen and (max-width: 720px) {
+        font-size: .8rem;
+      }
+    }
+
+    a {
+      @media screen and (max-width: 720px) {
+        font-size: 1.5rem;
+
+        &.mobile-hide {
+          display: none;
+        }
+      }
+      font-size: 1.75rem;
+      transition: color .3s ease;
+
+      &:hover {
+        color: $primary;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.social-links {
+  position: absolute;
+  bottom: 2vh;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+
+  .social-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 1.5rem 2rem;
+    border-radius: 3rem;
+
+    a {
+      @media screen and (max-width: 720px) {
+        font-size: $dimension-social-link / 1.2;
+        max-width: $dimension-social-link / .8;
+        width: $dimension-social-link / .8;
+        max-height: $dimension-social-link / .8;
+        height: $dimension-social-link / .8;
+        padding: .5rem;
+      }
+
+      @media screen and (max-width: 520px) {
+        font-size: $dimension-social-link / 1.3;
+        max-width: $dimension-social-link / 1.1;
+        width: $dimension-social-link / 1.1;
+        max-height: $dimension-social-link / 1.1;
+        height: $dimension-social-link / 1.1;
+        padding: .3rem;
+      }
+
+      font-size: $dimension-social-link / .8;
+      margin-right: .75em;
+      padding: 1rem;
+      border-radius: 1rem;
+      background-color: transparent;
+      max-width: $dimension-social-link;
+      width: $dimension-social-link;
+      max-height: $dimension-social-link;
+      height: $dimension-social-link;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color .3s ease;
+
+      &:hover {
+        @each $class, $color in $brands {
+          &.#{$class} {
+            background-color: $color;
+          }
+        }
+
+        svg.svg-inline--fa {
+          opacity: 1;
+          @each $icon, $color in $brands {
+            &.#{$icon} {
+              color: $color;
+            }
+          }
+        }
+      }
+
+      svg.svg-inline--fa {
+        color: white;
+        opacity: .45;
+        transition: opacity .3s ease;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+}
