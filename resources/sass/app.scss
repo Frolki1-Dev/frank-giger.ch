@@ -71,7 +71,7 @@ body {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  min-width: $min-width-background;
+  //min-width: $min-width-background;
   //min-height: calc($min-width-background / 16 * 9);
   margin: 0 auto;
   top: 0;
@@ -118,6 +118,10 @@ body {
 
   .bg-right {
     right: 0;
+
+    @include for-small-screen {
+      display: none;
+    }
 
     &.bg-level0 {
       top: 0;
