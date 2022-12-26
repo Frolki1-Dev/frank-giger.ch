@@ -25,9 +25,4 @@
     ExpiresByType application/x-shockwave-flash "access plus 1 month"
 </IfModule>
 
-<Directorymatch "^/.*/\.git/">
-  Order 'deny,allow'
-  Deny from all
-</Directorymatch>
-
 Options -Indexes

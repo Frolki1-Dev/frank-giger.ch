@@ -2,6 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
 
+$color-black: #0F131F;
+$color-black2: #0F1E2F;
+$color-blue: #122741;
+$color-dark-yellow: #CC922F;
+$color-yellow: #F7B02B;
+$color-light-yellow: #F3BE63;
+$color-beige: #DAC2A8;
+$min-width-background: 2100px;
+
 $primary: #298EF6;
 $color-spotify: #1ED760;
 $color-linkedin: #0077B7;
@@ -22,6 +31,12 @@ $gradient-overlay-end: rgba($primary, .2);
 
 $dimension-social-link: 30px;
 $dimension-me: 280px;
+
+@mixin for-small-screen {
+  @media screen and (max-width: 1100px) {
+    @content;
+  }
+}
 
 @keyframes morph {
   0% {
@@ -47,213 +62,492 @@ html {
 body {
   width: 100vw;
   height: 100vh;
-  background-image: url("img/hero.webp");
-  background-position: bottom center;
-  background-size: cover;
-  background-repeat: no-repeat;
   overflow: hidden;
+  background-color: $color-black2;
+}
+
+// Background
+#background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  min-width: $min-width-background;
+  min-height: calc($min-width-background / 16 * 9);
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  .bg-left, .bg-right {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .bg-left {
+    left: 0;
+
+    &.bg-level0 {
+      top: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      height: 100vh;
+    }
+
+    &.bg-level1 {
+      left: 250px;
+      bottom: 0;
+      z-index: 2;
+      height: 58vh;
+    }
+
+    &.bg-level2 {
+      height: 50vh;
+      top: 0;
+      z-index: 3;
+    }
+
+    &.bg-level3 {
+      height: 75vh;
+      top: 0;
+      z-index: 4;
+    }
+  }
+
+  .bg-right {
+    right: 0;
+
+    &.bg-level0 {
+      top: 0;
+      bottom: 0;
+      z-index: 5;
+      height: 100vh;
+    }
+
+    &.bg-level1 {
+      bottom: 0;
+      z-index: 6;
+      height: 58vh;
+    }
+
+    &.bg-level2 {
+      height: 100vh;
+      top: 0;
+      z-index: 7;
+    }
+
+    &.bg-level3 {
+      bottom: 0;
+      z-index: 8;
+      width: 50vw;
+    }
+  }
+}
+
+.no-break {
+  white-space: nowrap;
 }
 
 #overlay {
-  background: linear-gradient(45deg, $gradient-overlay-start, $gradient-overlay-end);
   width: 100vw;
   max-width: 100vw;
   max-height: 100vh;
   height: 100vh;
-  backdrop-filter: blur(3px);
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 1000;
+  padding: 0 3vw;
 
-  @media screen and (max-width: 720px) {
+  @include for-small-screen {
     padding: 0 3vw;
     max-width: (100vw - 3vw*2);
+  }
+
+  //@media screen and (max-width: 720px) {
+  //  padding: 0 3vw;
+  //  max-width: (100vw - 3vw*2);
+  //}
+}
+
+.what-i-use {
+  position: absolute;
+  right: 60px;
+  top: 60px;
+
+  @include for-small-screen {
+    right: unset;
+    top: 30px;
+  }
+
+  .what-i-use-container {
+    position: relative;
+
+    & .what-i-use-text {
+      font-size: 21px;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      transform: rotate(-90deg);
+      position: absolute;
+      right: 0;
+      white-space: nowrap;
+      text-align: right;
+      top: 150px;
+      width: 250px;
+
+      @include for-small-screen {
+        display: none;
+      }
+    }
+
+    & .what-i-use-box {
+      background-color: $color-black;
+      width: 85px;
+      border-radius: calc(85px / 2);
+      box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      padding: 22px 0;
+
+      @include for-small-screen {
+        flex-direction: row;
+        width: auto;
+        padding: 11px 22px;
+      }
+
+      & > a {
+        display: block;
+        padding: 11px;
+        color: white;
+        margin: 0 auto;
+        font-size: 42px;
+
+        @include for-small-screen {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+.my-socials {
+  position: absolute;
+  left: 60px;
+  bottom: 60px;
+
+  @include for-small-screen {
+    left: unset;
+    bottom: 30px;
+  }
+
+  .my-socials-container {
+    position: relative;
+
+    .my-socials-text {
+      font-size: 21px;
+      color: white;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      transform: rotate(-90deg);
+      position: absolute;
+      left: 0;
+      white-space: nowrap;
+      text-align: left;
+      bottom: 150px;
+      width: 250px;
+
+      @include for-small-screen {
+        display: none;
+      }
+    }
+
+    .my-socials-box {
+      background-color: $color-black;
+      border-radius: calc(85px / 2);
+      box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      padding: 22px 0;
+
+      @include for-small-screen {
+        background: transparent;
+        box-shadow: none;
+        flex-direction: row;
+        width: auto;
+        padding: 11px;
+      }
+
+      & > a {
+        display: block;
+        padding: 11px 22px;
+        color: white;
+        margin: 0 auto;
+        font-size: 42px;
+
+        @include for-small-screen {
+          font-size: 28px;
+          padding: 11px 16px;
+        }
+      }
+    }
+  }
+}
+
+.thanks {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  color: white;
+  //font-weight: 100;
+  font-size: .9rem;
+
+  @include for-small-screen {
+    bottom: 5px;
+    right: 5px;
+    font-size: .8rem;
+  }
+
+  & svg {
+    color: red;
   }
 }
 
 .me {
   text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
 
   img {
-    @media screen and (max-width: 720px) {
-      width: $dimension-me / 1.5;
-      height: $dimension-me / 1.5;
+    @include for-small-screen {
+        width: calc($dimension-me / 1.2);
+        height: calc($dimension-me / 1.2);
     }
 
     width: $dimension-me;
     height: $dimension-me;
-    border: 5px solid $primary;
-    animation: morph 8s ease-in-out infinite reverse;
+    border: 5px solid $color-yellow;
+    animation: morph 12s ease-in-out infinite reverse;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    transition: all 1s ease-in-out;
+    margin: 0 auto;
+    order: 1;
+
+    @include for-small-screen {
+      order: 3;
+      margin-top: 50px;
+    }
 
     &:hover {
       animation-play-state: paused;
     }
   }
 
-  h1 {
-    @media screen and (max-width: 720px) {
-      font-size: $dimension-me / 8.5;
-    }
+  .name {
+    font-weight: 700;
+    font-size: 126px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    order: 2;
 
-    @media screen and (max-width: 520px) {
-      font-size: $dimension-me / 9.5;
-    }
-
-    font-size: $dimension-me / 7;
-    color: white;
-    font-weight: 500;
-    margin-bottom: 0;
-    line-height: .9em;
-
-    small {
-      font-size: .4em;
-      font-weight: 200;
-      font-style: italic;
+    @include for-small-screen {
+      font-size: 45px;
+      order: 1;
+      letter-spacing: 1px;
+      margin-top: 0;
     }
   }
 
-  p.sub {
-    @media screen and (max-width: 720px) {
-      font-size: $dimension-me / 11.5;
-    }
+  .current-job {
+    font-weight: 100;
+    font-size: 32px;
+    margin-top: 30px;
+    order: 3;
 
-    @media screen and (max-width: 520px) {
-      font-size: $dimension-me / 14;
+    @include for-small-screen {
+      font-size: 16px;
+      font-weight: 400;
+      order: 2;
+      margin-top: 20px;
     }
-
-    margin: .75em 0 1.25em;
-    color: darken(white, 7%);
-    font-weight: 300;
-    font-size: $dimension-me / 10;
-    line-height: 1.4em;
   }
 
-  .list {
-    @media screen and (max-height: 650px) {
-      display: none;
-    }
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  .more-info {
+    margin-top: 70px;
+    font-size: 28px;
+    font-weight: 100;
+    order: 4;
 
-    span, a {
-      color: white;
-      margin-right: 1.25rem;
-    }
-
-    span {
-      font-weight: 600;
-
-      @media screen and (max-width: 720px) {
-        font-size: .8rem;
-      }
-    }
-
-    a {
-      @media screen and (max-width: 720px) {
-        font-size: 1.5rem;
-
-        &.mobile-hide {
-          display: none;
-        }
-      }
-      font-size: 1.75rem;
-      transition: color .3s ease;
-
-      &:hover {
-        color: $primary;
-      }
-
-      &:last-child {
-        margin-right: 0;
-      }
+    @include for-small-screen {
+      font-size: 18px;
+      font-weight: 300;
     }
   }
 }
 
-.social-links {
-  position: absolute;
-  bottom: 2vh;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-
-  .social-links-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, .5);
-    padding: 1.5rem 2rem;
-    border-radius: 3rem;
-
-    a {
-      @media screen and (max-width: 720px) {
-        font-size: $dimension-social-link / 1.2;
-        max-width: $dimension-social-link / .8;
-        width: $dimension-social-link / .8;
-        max-height: $dimension-social-link / .8;
-        height: $dimension-social-link / .8;
-        padding: .5rem;
-      }
-
-      @media screen and (max-width: 520px) {
-        font-size: $dimension-social-link / 1.3;
-        max-width: $dimension-social-link / 1.1;
-        width: $dimension-social-link / 1.1;
-        max-height: $dimension-social-link / 1.1;
-        height: $dimension-social-link / 1.1;
-        padding: .3rem;
-      }
-
-      font-size: $dimension-social-link / .8;
-      margin-right: .75em;
-      padding: 1rem;
-      border-radius: 1rem;
-      background-color: transparent;
-      max-width: $dimension-social-link;
-      width: $dimension-social-link;
-      max-height: $dimension-social-link;
-      height: $dimension-social-link;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: background-color .3s ease;
-
-      &:hover {
-        @each $class, $color in $brands {
-          &.#{$class} {
-            background-color: $color;
-          }
-        }
-
-        svg.svg-inline--fa {
-          opacity: 1;
-          @each $icon, $color in $brands {
-            &.#{$icon} {
-              color: $color;
-            }
-          }
-        }
-      }
-
-      svg.svg-inline--fa {
-        color: white;
-        opacity: .45;
-        transition: opacity .3s ease;
-
-        &:hover {
-          opacity: 1;
-        }
-      }
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-  }
-
-}
+//  h1 {
+//    @media screen and (max-width: 720px) {
+//      font-size: calc($dimension-me / 8.5);
+//    }
+//
+//    @media screen and (max-width: 520px) {
+//      font-size: calc($dimension-me / 9.5);
+//    }
+//
+//    font-size: calc($dimension-me / 7);
+//    color: white;
+//    font-weight: 500;
+//    margin-bottom: 0;
+//    line-height: .9em;
+//
+//    small {
+//      font-size: .4em;
+//      font-weight: 200;
+//      font-style: italic;
+//    }
+//  }
+//
+//  p.sub {
+//    @media screen and (max-width: 720px) {
+//      font-size: calc($dimension-me / 11.5);
+//    }
+//
+//    @media screen and (max-width: 520px) {
+//      font-size: calc($dimension-me / 14);
+//    }
+//
+//    margin: .75em 0 1.25em;
+//    color: darken(white, 7%);
+//    font-weight: 300;
+//    font-size: calc($dimension-me / 10);
+//    line-height: 1.4em;
+//  }
+//
+//  .list {
+//    @media screen and (max-height: 650px) {
+//      display: none;
+//    }
+//    display: flex;
+//    flex-wrap: wrap;
+//    justify-content: space-between;
+//    align-items: center;
+//
+//    span, a {
+//      color: white;
+//      margin-right: 1.25rem;
+//    }
+//
+//    span {
+//      font-weight: 600;
+//
+//      @media screen and (max-width: 720px) {
+//        font-size: .8rem;
+//      }
+//    }
+//
+//    a {
+//      @media screen and (max-width: 720px) {
+//        font-size: 1.5rem;
+//
+//        &.mobile-hide {
+//          display: none;
+//        }
+//      }
+//      font-size: 1.75rem;
+//      transition: color .3s ease;
+//
+//      &:hover {
+//        color: $primary;
+//      }
+//
+//      &:last-child {
+//        margin-right: 0;
+//      }
+//    }
+//  }
+//}
+//
+//.social-links {
+//  position: absolute;
+//  bottom: 2vh;
+//  left: 0;
+//  right: 0;
+//  display: flex;
+//  justify-content: center;
+//
+//  .social-links-container {
+//    display: flex;
+//    flex-wrap: wrap;
+//    justify-content: center;
+//    background-color: rgba(0, 0, 0, .5);
+//    padding: 1.5rem 2rem;
+//    border-radius: 3rem;
+//
+//    a {
+//      @media screen and (max-width: 720px) {
+//        font-size: calc($dimension-social-link / 1.2);
+//        max-width: calc($dimension-social-link / .8);
+//        width: calc($dimension-social-link / .8);
+//        max-height: calc($dimension-social-link / .8);
+//        height: calc($dimension-social-link / .8);
+//        padding: .5rem;
+//      }
+//
+//      @media screen and (max-width: 520px) {
+//        font-size: calc($dimension-social-link / 1.3);
+//        max-width: calc($dimension-social-link / 1.1);
+//        width: calc($dimension-social-link / 1.1);
+//        max-height: calc($dimension-social-link / 1.1);
+//        height: calc($dimension-social-link / 1.1);
+//        padding: .3rem;
+//      }
+//
+//      font-size: calc($dimension-social-link / .8);
+//      margin-right: .75em;
+//      padding: 1rem;
+//      border-radius: 1rem;
+//      background-color: transparent;
+//      max-width: $dimension-social-link;
+//      width: $dimension-social-link;
+//      max-height: $dimension-social-link;
+//      height: $dimension-social-link;
+//      display: flex;
+//      justify-content: center;
+//      align-items: center;
+//      transition: background-color .3s ease;
+//
+//      &:hover {
+//        @each $class, $color in $brands {
+//          &.#{$class} {
+//            background-color: $color;
+//          }
+//        }
+//
+//        svg.svg-inline--fa {
+//          opacity: 1;
+//          @each $icon, $color in $brands {
+//            &.#{$icon} {
+//              color: $color;
+//            }
+//          }
+//        }
+//      }
+//
+//      svg.svg-inline--fa {
+//        color: white;
+//        opacity: .45;
+//        transition: opacity .3s ease;
+//
+//        &:hover {
+//          opacity: 1;
+//        }
+//      }
+//
+//      &:last-child {
+//        margin-right: 0;
+//      }
+//    }
+//  }
+//
+//}
